@@ -234,5 +234,6 @@ source "drivers/nfc/oplus_nfc/Kconfig"
 source "drivers/nfc/st21nfc-i2c/Kconfig"
 source "drivers/nfc/st54-spi/Kconfig"
 
-source "drivers/kernelsu"
+source "drivers/kernelsu/Kconfig"
+
 endmenu
