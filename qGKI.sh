@@ -43,19 +43,19 @@ build_kernel(){
     make ${BUILD_OPTIONS} mrproper
     make ${BUILD_OPTIONS} stock_defconfig
 
-#     nano out/.config
+     nano out/.config
 
     # Build the kernel
     make ${BUILD_OPTIONS} Image || exit 1
-#    cat out/arch/arm64/boot/Image | gzip -n -f -9 > out/arch/arm64/boot/Image1.gz
-#    cp out/arch/arm64/boot/Image ${HOME}/kernels
-#    cd ${HOME}/kernels
-#    ./patch_linux Image
-#    cd $KERNEL_ROOT
-#    mv ../oImage out/arch/arm64/boot/Image
+    cat out/arch/arm64/boot/Image | gzip -n -f -9 > out/arch/arm64/boot/Image1.gz
+    cp out/arch/arm64/boot/Image ${HOME}/kernels
+    cd ${HOME}/kernels
+    ./patch_linux Image
+    cd $KERNEL_ROOT
+    mv ../oImage out/arch/arm64/boot/Image
     cat out/arch/arm64/boot/Image | gzip -n -f -9 > out/arch/arm64/boot/Image.gz
     # Copy the built kernel to the build directory
-#    cp "${KERNEL_ROOT}/out/arch/arm64/boot/Image1.gz" /mnt/hgfs/Firm
+    cp "${KERNEL_ROOT}/out/arch/arm64/boot/Image1.gz" /mnt/hgfs/Firm
     cp "${KERNEL_ROOT}/out/arch/arm64/boot/Image.gz" /mnt/hgfs/Firm
 
     echo -e "\n[INFO]: BUILD FINISHED..!"
