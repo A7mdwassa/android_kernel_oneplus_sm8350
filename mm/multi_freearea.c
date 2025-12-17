@@ -1,1 +1,1 @@
-../../../vendor/oplus/kernel/oplus_performance/multi_freearea/multi_freearea.c
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/oplus_performance/multi_freearea/multi_freearea.c

@@ -1,1 +1,1 @@
-../../../../../vendor/oplus/kernel/touchpanel/oplus_touchscreen_v2/touchpanel_notify/touchpanel_event_notify.h
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/touchpanel/oplus_touchscreen_v2/touchpanel_notify/touchpanel_event_notify.h

@@ -1,1 +1,1 @@
-../../../../vendor/oplus/kernel/oplus_performance/task_cpustats/task_cpustats.h
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/oplus_performance/task_cpustats/task_cpustats.h

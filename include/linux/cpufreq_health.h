@@ -1,1 +1,1 @@
-../../../../vendor/oplus/kernel/power/cpufreq_health/cpufreq_health.h
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/power/cpufreq_health/cpufreq_health.h

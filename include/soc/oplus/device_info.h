@@ -1,1 +1,1 @@
-../../../../../vendor/oplus/kernel/device_info/device_info/device_info.h
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/device_info/device_info/device_info.h

@@ -1,1 +1,1 @@
-../../../../../vendor/oplus/kernel/system/include/boot_mode.h
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/system/include/boot_mode.h

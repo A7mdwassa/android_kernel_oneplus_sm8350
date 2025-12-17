@@ -1,1 +1,1 @@
-../../../../vendor/oplus/kernel/misc/sim_detect.c
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/misc/sim_detect.c

@@ -1,1 +1,1 @@
-../../../../vendor/oplus/kernel/misc/oem_qmi_client.c
+/home/nassar/kernels/android_kernel_oneplus_sm8350/vendor/oplus/kernel/misc/oem_qmi_client.c
