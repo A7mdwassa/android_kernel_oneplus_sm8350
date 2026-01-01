@@ -39,11 +39,14 @@ CLANG_PREBUILT_BIN="${HOME}/toolchains/clang-r383902b1/bin" \
 DEPMOD=depmod \
 "
 build_kernel(){
+    export $(grep -v '^#' oplus_native_features.mk | xargs)
+    BRAND_SHOW_FLAG=oneplus
+
     make ${BUILD_OPTIONS} clean
     make ${BUILD_OPTIONS} mrproper
     make ${BUILD_OPTIONS} stock_defconfig
 
-     nano out/.config
+    nano out/.config
 
     # Build the kernel
     make ${BUILD_OPTIONS} Image || exit 1
