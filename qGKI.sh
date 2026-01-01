@@ -44,9 +44,9 @@ build_kernel(){
 
     make ${BUILD_OPTIONS} clean
     make ${BUILD_OPTIONS} mrproper
-    make ${BUILD_OPTIONS} stock_defconfig
+    make ${BUILD_OPTIONS} sukisu_defconfig
 
-    nano out/.config
+#    nano out/.config
 
     # Build the kernel
     make ${BUILD_OPTIONS} Image || exit 1
