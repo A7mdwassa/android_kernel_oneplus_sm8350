@@ -42,14 +42,14 @@ build_kernel(){
     export $(grep -v '^#' oplus_native_features.mk | xargs)
     BRAND_SHOW_FLAG=oneplus
 
-    make ${BUILD_OPTIONS} clean
-    make ${BUILD_OPTIONS} mrproper
-    make ${BUILD_OPTIONS} sukisu_defconfig
+#    make ${BUILD_OPTIONS} clean
+#    make ${BUILD_OPTIONS} mrproper
+#    make ${BUILD_OPTIONS} sukisu_defconfig
 
 #    nano out/.config
 
     # Build the kernel
-    make ${BUILD_OPTIONS} Image || exit 1
+    BRAND_SHOW_FLAG=oneplus make BRAND_SHOW_FLAG=oneplus ${BUILD_OPTIONS} Image || exit 1
     cat out/arch/arm64/boot/Image | gzip -n -f -9 > out/arch/arm64/boot/Image1.gz
     cp out/arch/arm64/boot/Image ${HOME}/kernels
     cd ${HOME}/kernels
